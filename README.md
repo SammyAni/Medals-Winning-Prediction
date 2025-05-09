@@ -50,16 +50,11 @@ test.loc[test["predictions"]< 0,"predictions"] = 0
 
 test["predictions"]= test["predictions"].round()
 test
-
-
 from sklearn.metrics import mean_absolute_error
 error = mean_absolute_error(test["medals"], test["predictions"])
 error
-
 teams.describe()["medals"]
-
 test[test["team"]=="USA"]
-
 test[test["team"]=="IND"]
 
 error = (test["medals"]-test["predictions"]).abs()
