@@ -2,8 +2,6 @@
 #Predict how many medals each country will win in the olympics using a linear regression model.
 
 import pandas as pd
-
-import pandas as pd
 teams = pd.read_csv('teams.csv')
 #To take the important features/predictors
 teams = teams[["team","country","year","athletes","age","prev_medals","medals"]]
