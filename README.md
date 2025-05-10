@@ -2,12 +2,14 @@
 #Predict how many medals each country will win in the olympics using a linear regression model.
 
 import pandas as pd
+
+import pandas as pd
 teams = pd.read_csv('teams.csv')
-teams
+#To take the important features/predictors
 teams = teams[["team","country","year","athletes","age","prev_medals","medals"]]
 teams
 
- #Select all numeric features, including 'medals'
+ #Selecting all numeric features, including 'medals'
 all_numeric_features = ["year", "athletes", "age", "prev_medals", "medals"] 
 
 # Calculate the correlation matrix for all numeric features
